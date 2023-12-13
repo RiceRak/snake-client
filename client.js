@@ -16,7 +16,7 @@ const connect = function() {
     conn.write("Name: RAK");
     conn.write("Move: up");
     
-    setTimeout(() => {
+    setInterval(() => {
       conn.write("Move: up");} , 50
     );
    
