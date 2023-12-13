@@ -5,13 +5,16 @@ const connect = function() {
     host: "localhost",
     port: 50541,
   });
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
   // confirm that client/user has connected to the game
   conn.on("connect", () => {
     console.log("Successfully connected to game server!")
   });
+  //Send a name to the server
+  conn.on("connect", () => {
+    console.log("Name: RAK")
+  })
   // update function to handle incoming data and console.log it for the player
   conn.on("data", (data) => {
     console.log("Message from server:", data);
