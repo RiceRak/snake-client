@@ -14,7 +14,12 @@ const connect = function() {
     console.log("Successfully connected to game server!");
     //Send a name to the server
     conn.write("Name: RAK");
-    conn.write("Move: up")
+    conn.write("Move: up");
+    
+    setTimeout(() => {
+      conn.write("Move: up");} , 50
+    );
+   
   });
   
   // update function to handle incoming data and console.log it for the player
