@@ -16,9 +16,9 @@ const connect = function() {
     conn.write("Name: RAK");
     conn.write("Move: up");
     
-    setInterval(() => {
-      conn.write("Move: up");} , 50
-    );
+    // setInterval(() => {
+    //   conn.write("Move: up");} , 50
+    // );
    
   });
   
