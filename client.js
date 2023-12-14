@@ -14,7 +14,6 @@ const connect = function() {
     console.log("Successfully connected to game server!");
     //Send a name to the server
     conn.write("Name: RAK");
-    conn.write("Move: up");
     
     // setInterval(() => {
     //   conn.write("Move: up");} , 50
