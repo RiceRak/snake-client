@@ -12,6 +12,8 @@ const handleUserInput = function (buffer) {
   const a = "Move: left";
   const s = "Move: down";
   const d = "Move: right";
+  const q = "Say: QQ"
+  const e = "Say: =D"
 
   if (key === 'w') {
     connection.write(w);
@@ -25,7 +27,13 @@ const handleUserInput = function (buffer) {
   if (key === 'd') {
     connection.write(d);
   }
-
+  if (key === 'q') {
+    connection.write(q);
+  }
+  if (key === 'e') {
+    connection.write(e);
+  }
+  
 };
 
 const setupInput = function (conn) {
