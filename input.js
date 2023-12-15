@@ -1,35 +1,17 @@
-const { MOVE_UP, MOVE_LEFT, MOVE_DOWN, MOVE_RIGHT, SAY_CRY, SAY_HAPPY } = require("./constants");
+const { keyMap } = require("./constants");
 let connection;
 
-const handleUserInput = function (buffer) {
+const handleUserInput = function(buffer) {
   const key = buffer.toString();
-  
-
   if (key === '\u0003') {
     process.exit();
   }
-  if (key === 'w') {
-    connection.write(MOVE_UP);
+  if (keyMap[key]) { // looking for a truthy or a falsey. If true, execute connection.write. Get used to this syntax.
+    connection.write(keyMap[key]);
   }
-  if (key === 'a') {
-    connection.write(MOVE_LEFT);
-  }
-  if (key === 's') {
-    connection.write(MOVE_DOWN);
-  }
-  if (key === 'd') {
-    connection.write(MOVE_RIGHT);
-  }
-  if (key === 'q') {
-    connection.write(SAY_CRY);
-  }
-  if (key === 'e') {
-    connection.write(SAY_HAPPY);
-  }
-  
 };
 
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -39,6 +21,6 @@ const setupInput = function (conn) {
   return stdin;
 };
 
-module.exports = { 
+module.exports = {
   setupInput,
- }
+};
