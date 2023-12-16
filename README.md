@@ -14,7 +14,7 @@ This is simply a multiplayer take on the genre.
 git clone git@github.com:RiceRak/snake-client.git
 cd snake-client
 ```
-- Run the development snake client use the command `node play.js "YOUR DESIRED NAME - ONLY THREE LETTERS"` (Otherwise you will play with my gamertag 😘)
+- Run the development snake client with the command below. Choose a three letter username. (Otherwise you will play with my gamertag 😘)
 ```bash
 # Run via Node.js
 node play.js "YOUR 3 LETTER NAME"
@@ -23,10 +23,9 @@ node play.js "YOUR 3 LETTER NAME"
 ## How to play
 
 - The goal is to eat and grow to become as big as possible without bumping into the _side walls_, or bumping into _ones self_, upon which you will be un-alived. ☠
-![Alt text](image-2.png)
 - If you idle for too long, you will also be un-alived. ☠
-![Alt text](image-1.png)
-
+- Your start should look like this
+![Alt Text](https://postimg.cc/kB2YDK3v)
 ## Controls
 ### Movement
 - w: Move up
