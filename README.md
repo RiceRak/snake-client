@@ -47,3 +47,11 @@ node play.js "YOUR 3 LETTER NAME"
 # Run via Node.js again
 node play.js "YOUR 3 LETTER NAME"
 ```
+
+## Acknowledgements
+
+This project was built with heavy guidance from LHL staff!
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
