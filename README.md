@@ -25,7 +25,7 @@ node play.js "YOUR 3 LETTER NAME"
 - The goal is to eat and grow to become as big as possible without bumping into the _side walls_, or bumping into _ones self_, upon which you will be un-alived. ☠
 - If you idle for too long, you will also be un-alived. ☠
 - Your start should look like this
-![Alt Text](https://postimg.cc/kB2YDK3v)
+[![screen-1.jpg](https://i.postimg.cc/wMRC4Cbk/screen-1.jpg)](https://postimg.cc/GTrgH5RB)
 ## Controls
 ### Movement
 - w: Move up
