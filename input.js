@@ -6,7 +6,7 @@ const handleUserInput = function(buffer) {
   if (key === '\u0003') {
     process.exit();
   }
-  if (keyMap[key]) { // looking for a truthy or a falsey. If true, execute connection.write. Get used to this syntax.
+  if (keyMap[key]) {
     connection.write(keyMap[key]);
   }
 };
